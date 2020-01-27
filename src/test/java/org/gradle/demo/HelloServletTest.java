@@ -43,7 +43,7 @@ public class HelloServletTest {
 
         new HelloServlet().doPost(request, response);
 
-        verify(request).setAttribute("user", "World");
+        verify(request).setAttribute("user", "World!!!");
         verify(requestDispatcher).forward(request,response);
     }
 
